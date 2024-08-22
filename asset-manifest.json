@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/LoveCard/static/css/main.28367e20.css",
-    "main.js": "/LoveCard/static/js/main.1cb43110.js",
+    "main.css": "/LoveCard/static/css/main.5614bd63.css",
+    "main.js": "/LoveCard/static/js/main.387e53f2.js",
     "static/js/453.07bc1902.chunk.js": "/LoveCard/static/js/453.07bc1902.chunk.js",
     "index.html": "/LoveCard/index.html",
-    "main.28367e20.css.map": "/LoveCard/static/css/main.28367e20.css.map",
-    "main.1cb43110.js.map": "/LoveCard/static/js/main.1cb43110.js.map",
+    "main.5614bd63.css.map": "/LoveCard/static/css/main.5614bd63.css.map",
+    "main.387e53f2.js.map": "/LoveCard/static/js/main.387e53f2.js.map",
     "453.07bc1902.chunk.js.map": "/LoveCard/static/js/453.07bc1902.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28367e20.css",
-    "static/js/main.1cb43110.js"
+    "static/css/main.5614bd63.css",
+    "static/js/main.387e53f2.js"
   ]
 }
