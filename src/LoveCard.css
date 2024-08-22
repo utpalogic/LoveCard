@@ -1,0 +1,130 @@
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+}
+
+.envelope {
+  width: 200px;
+  height: 150px;
+  background-color: pink;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  margin: 0 auto;
+  animation: bounce 1s infinite alternate;
+  z-index: 4; 
+}
+
+.envelope.open {
+  transform: rotateX(180deg);
+}
+
+.envelope-flap {
+  width: 100%;
+  height: 50%;
+  background-color: red;
+  position: absolute;
+  top: 0;
+  border-radius: 10px 10px 0 0;
+  transform-origin: bottom;
+  transition: transform 0.6s ease;
+}
+
+.envelope-body {
+  width: 100%;
+  height: 50%;
+  background-color: pink;
+  position: absolute;
+  bottom: 0;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.heart {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  background-color: red;
+  transform: rotate(45deg);
+  margin: 0 auto;
+}
+
+.heart:before,
+.heart:after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.heart:before {
+  top: -25px;
+  left: 0;
+}
+
+.heart:after {
+  top: 0;
+  left: -25px;
+}
+
+.shadow {
+  width: 100%;
+  height: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: -10px;
+  border-radius: 50%;
+}
+
+.letter {
+  position: absolute;
+  top: 20px;
+  width: 350px;
+  background-color: rgb(236, 83, 83);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  z-index: 5; 
+}
+
+.letter.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter p {
+  margin: 5px 0;
+  position: relative;
+}
+
+.letter .design {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  color: red;
+  opacity: 0.5;
+}
+
+@keyframes bounce {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+  
